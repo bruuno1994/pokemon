@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../style.css'
 
 function Header() {
     return(
         <div>
             <header>
-                Pokedéx
+                Poke Guia - O guia de Pokemóns
             </header>
         </div>
     )

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './style.css'
-import Card from './components/Card'
+import Cartao from './components/Cartao'
+
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
 
   useEffect(() => {
 
-    let url = `https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0`;
+    let url = `https://pokeapi.co/api/v2/pokemon/?limit=10&offset=0`;
      fetch(url)
      .then(response => response.json())
      .then(res => {
@@ -21,13 +22,12 @@ function App() {
 
   return(
     <div className='container'>
-
           
         {/* {pokemonName ? <Card name={pokemonName} /> : ''} */}
 
         { pokemons.map((data, index) => (
           <div key={index}>
-            <Card name={data.name} />
+            <Cartao name={data.name} />
           </div>
         )) }
       </div>
