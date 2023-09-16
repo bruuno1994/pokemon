@@ -6,10 +6,9 @@
     flex-wrap: wrap;
     padding: 10px;
     margin: 0 auto;
-}
+    background-color: lightgray;
+    border-radius: 10px;
 
-.pokemon {
-    border: 1px solid black;
 }
 
 body {
@@ -28,4 +27,61 @@ header {
     background-color: yellow;
     color: red;
     box-shadow: 5px 5px 6px orange;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.normal-color {
+    background-color: white;
+}
+
+.grass-color {
+    background-color: lightgreen;
+}
+
+.poison-color {
+    background-color: purple;
+}
+
+.grass-poison-color {
+    background: linear-gradient(lightgreen, purple);
+    color: white;
+}
+
+.fire-color {
+    background-color: orange;
+}
+
+.fire-flying-color {
+    background: linear-gradient(orange, lightgray);
+}
+
+.water-color {
+    background-color: blue;
+    color: white;
+}
+
+.electric-color {
+    background-color: yellow;
+}
+
+.bug-color {
+    background-color: lightgreen;
+}
+
+.bug-flying-color {
+    background: linear-gradient(lightgreen,lightgray);
+}
+
+.psychic-color {
+    background-color: pink;
 }
