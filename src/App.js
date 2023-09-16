@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './style.css'
+import Card from './components/Card'
 
 function App() {
 
   const [pokemons, setPokemon] = useState([])
-  const [pokemonName, setPokemonName] = useState('')
+  //const [pokemonName, setPokemonName] = useState('')
 
   useEffect(() => {
 
-    let url = `https://pokeapi.co/api/v2/pokemon/?limit=5&offset=0`;
+    let url = `https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0`;
      fetch(url)
      .then(response => response.json())
      .then(res => {
@@ -18,38 +19,18 @@ function App() {
 
   },[])
 
-  console.log(pokemons);
-
-  const handleSearch = (e) => {
-    e.preventDefault(); // Impedir o envio do formulário
-  }
-
   return(
     <div className='container'>
-      <header>
-        <strong>Pokemon API</strong>
-      </header>
-      <br />
 
-      <div>
-        <form onSubmit={handleSearch}>
-          <input
-            type="text"
-            placeholder="Digite o nome do Pokémon"
-            value={pokemonName}
-            onChange={(e) => setPokemonName(e.target.value)}
-          />
-          <br />
-          <br />
-          <button type="submit">Buscar</button>
-        </form>
+          
+        {/* {pokemonName ? <Card name={pokemonName} /> : ''} */}
+
         { pokemons.map((data, index) => (
           <div key={index}>
-            <p >{ data.name }</p>
+            <Card name={data.name} />
           </div>
         )) }
       </div>
-    </div>
   )
 }
 
