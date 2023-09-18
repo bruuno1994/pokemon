@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ContainerForm, ContainerSearch, Input, Button } from './form-style';
 
 function Form({ pokemonCount, setPokemonCount, setPokemonName }) {
     const [pesquisaInput, setPesquisaInput] = useState('')
@@ -12,39 +13,51 @@ function Form({ pokemonCount, setPokemonCount, setPokemonName }) {
         setPokemonCount(valor);
     }
   };
+  
+  const handleSearch = (e) => {
 
-  const handleSearch = () => {
-
+    e.preventDefault();
+    
     if (pesquisaInput !== '') {
+      
       setPokemonName(pesquisaInput);
     } else {
-        setPokemonName('')
+      setPokemonName('')
     }
   };
+  
 
   return (
-    <div>
-      <label>Digite a quantidade de Pokemóns a ser exibida: </label>
+
+    <ContainerForm>
+
+    <br />
+    <h3>Olá, bem vindo ao seu guia de Pokemóns definitivo.</h3>
+    <h4>Para começar, escolha uma das opções abaixo:</h4>
+
+      <ContainerSearch>
       <br />
-      <input
+      <Input
         type="number"
         id="pokemonCount"
+        placeholder='Quantidade de Pokemóns'
         value={pokemonCount}
         onChange={handleCountChange}
       />
-      <div>
-        <label htmlFor="searchInput">Pesquisar um Pokémon pelo seu nome:</label>
-        <br />
-        <input
+      </ContainerSearch>
+      <ContainerSearch>
+        <Input
           type="text"
           id="searchInput"
+          placeholder='Pesquisa por nome'
           value={pesquisaInput}
           onChange={(e) => setPesquisaInput(e.target.value)}
         />
         <br />
-        <button onClick={handleSearch}>Pesquisar</button>
-      </div>
-    </div>
+        <br />
+        <Button onClick={handleSearch}>Buscar</Button>
+        </ContainerSearch>
+      </ContainerForm>
   );
 }
 

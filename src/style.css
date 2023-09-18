@@ -8,7 +8,6 @@
     margin: 0 auto;
     background-color: lightgray;
     border-radius: 10px;
-
 }
 
 body {
@@ -17,43 +16,31 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    height: 60px;
-    width: 100%;
-    background-color: yellow;
-    color: red;
-    box-shadow: 5px 5px 6px orange;
-}
-
-.formulario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 .normal-color {
-    background-color: white;
+    background-color: cornflowerblue;
+}
+
+.normal-flying-color {
+    background:linear-gradient(cornflowerblue,lightgray);
 }
 
 .grass-color {
-    background-color: lightgreen;
+    background-color: green;
+    color: white;
 }
 
 .poison-color {
     background-color: purple;
+    color: white;
 }
 
 .grass-poison-color {
-    background: linear-gradient(lightgreen, purple);
+    background: linear-gradient(green, purple);
+    color: white;
+}
+
+.grass-flying-color {
+    background: linear-gradient(green, lightgray);
     color: white;
 }
 
@@ -78,10 +65,204 @@ header {
     background-color: lightgreen;
 }
 
+.bug-poison-color {
+    background:linear-gradient(lightgreen,purple);
+    color: white;
+}
+
 .bug-flying-color {
     background: linear-gradient(lightgreen,lightgray);
 }
 
 .psychic-color {
     background-color: pink;
+}
+
+.ground-color {
+    background-color: brown;
+    color: white;
+}
+
+.poison-ground-color {
+    background: linear-gradient(purple, brown);
+    color: white;
+}
+
+.water-ground-color {
+    background: linear-gradient(blue, brown);
+    color: white;
+}
+
+.fairy-color {
+    background-color: antiquewhite;
+}
+
+.dark-color {
+    background-color: black;
+    color: white;
+}
+
+.psychic-fairy-color {
+    background: linear-gradient(pink ,antiquewhite) ;
+}
+
+.normal-fairy-color {
+    background: linear-gradient(cornflowerblue, antiquewhite);
+}
+
+.poison-flying-color {
+    background: linear-gradient(purple, lightgray);
+    color: white;
+}
+
+.dark-flying-color {
+    background: linear-gradient(black, lightgray);
+    color: white;
+}
+
+.bug-grass-color {
+    background: linear-gradient(lightgreen, green);
+    color: black;
+}
+
+.fighting-color {
+    background-color: red;
+    color: white;
+}
+
+.water-fighting-color {
+    background: linear-gradient(blue, red);
+    color: white;
+}
+
+.water-poison-color {
+    background: linear-gradient(blue, purple);
+    color: white;
+}
+
+.rock-ground-color {
+    background: linear-gradient(gray, brown);
+    color: white;
+}
+
+.rock-water-color {
+    background: linear-gradient(gray, blue);
+    color: white;
+}
+
+.dragon-flying-color {
+    background: linear-gradient(#FE9A2E, lightgray);
+    color: black;
+}
+
+.dragon-color {
+    background-color: #FE9A2E;
+}
+
+.rock-flying-color {
+    background: linear-gradient(gray, lightgray);
+    color: black;
+}
+
+.ground-rock-color {
+    background: linear-gradient(brown, gray);
+    color: white;
+}
+
+.water-psychic-color {
+    background: linear-gradient(blue, pink);
+    color: white;
+}
+
+.water-electric-color {
+    background: linear-gradient(blue, yellow);
+    color: white;
+}
+
+.water-flying-color {
+    background: linear-gradient(blue, lightgray);
+    color: white;
+}
+
+.ice-psychic-color {
+    background: linear-gradient(lightblue, pink);
+    color: black;
+}
+
+.bug-fighting-color {
+    background: linear-gradient(lightgreen, red);
+}
+
+.bug-rock-color {
+    background: linear-gradient(lightgreen, gray);
+}
+
+.normal-psychic-color {
+    background: linear-gradient(cornflowerblue, pink);
+    color: black;
+}
+
+.electric-steel-color {
+    background: linear-gradient(yellow, white);
+    color: black;
+}
+
+.bug-steel-color {
+    background: linear-gradient(lightgreen, white);
+    color: black;
+}
+
+.ice-flying-color {
+    background: linear-gradient(lightblue, lightgray);
+}
+
+.fairy-flying-color {
+    background: linear-gradient(antiquewhite, lightgray);
+}
+
+.rock-color {
+    background-color: gray;
+    color: white;
+}
+
+.water-fairy-color {
+    background: linear-gradient(blue, antiquewhite);
+    color: white;
+}
+
+.psychic-flying-color {
+    background: linear-gradient(pink, lightgray);
+}
+
+.electric-flying-color {
+    background: linear-gradient(yellow, lightgray);
+}
+
+.water-ice-color {
+    background: linear-gradient(blue, lightblue);
+    color: white;
+}
+
+.dark-ice-color {
+    background: linear-gradient(black, lightblue);
+    color: white;
+}
+
+.ghost-poison-color {
+    background: linear-gradient(magenta, purple);
+    color: white;
+}
+
+.ghost-color {
+    background-color: magenta;
+}
+
+.grass-psychic-color {
+    background: linear-gradient(green, pink);
+    color: white;
+}
+
+.ground-flying-color {
+    background: linear-gradient(gray, lightgray);
+    color: black;
 }

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 import Cartao from './components/Cartao';
-import Form from './components/Form';
+import Form from './components/form/Form';
 
 function App() {
   const [pokemons, setPokemon] = useState([]);
-  const [pokemonCount, setPokemonCount] = useState(2);
+  const [pokemonCount, setPokemonCount] = useState('');
   const [pokemonName, setPokemonName] = useState('');
 
   useEffect(() => {
