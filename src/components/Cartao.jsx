@@ -1,10 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
+import '../style.css'
 
 const Cartao = ({ ...props }) => {
   const [pokemons, setPokemon] = useState([]);
   const [pokemonAbilities, setPokemonAbilities] = useState([]);
   const [pokemonType, setPokemonType] = useState([]);
+  const [pokemonHp, setPokemonHp] = useState([]);
+  const [pokemonAttack, setPokemonAttack] = useState([]);
+  const [pokemonDefense, setPokemonDefense] = useState([]);
+  const [pokemonSpeed, setPokemonSpeed] = useState([]);
 
   useEffect(() => {
     let url = `https://pokeapi.co/api/v2/pokemon/${props.name}`;
@@ -21,7 +26,27 @@ const Cartao = ({ ...props }) => {
           res.types.map((data) => {
             return data.type.name;
           })
+        )
+          setPokemonAttack(
+            res.stats.map((data) => {
+              return data.base_stat;
+            })
         );
+        setPokemonHp(
+          res.stats.map((data) => {
+            return data.base_stat;
+          })
+      );
+      setPokemonDefense(
+        res.stats.map((data) => {
+          return data.base_stat;
+        })
+    );
+    setPokemonSpeed(
+      res.stats.map((data) => {
+        return data.base_stat;
+      })
+  );
       })
       .catch((err) => console.log(err));
   }, []);
@@ -63,6 +88,10 @@ const Cartao = ({ ...props }) => {
             {pokemonType[1] ? pokemonType[1] : ""}{" "}</p>
               <p className={`card-text `}> <strong> Habilidades : </strong> {pokemonAbilities[0]} /{" "}
             {pokemonAbilities[1] ? pokemonAbilities[1] : ""}{" "}</p>
+            <p className={`card-text `}> <strong> Pontos de Vida : </strong> {pokemonHp[0]} </p>
+            <p className={`card-text `}> <strong> Ataque : </strong> {pokemonAttack[1]} </p>
+            <p className={`card-text `}> <strong> Defesa : </strong> {pokemonDefense[2]} </p>
+            <p className={`card-text `}> <strong> Velocidade : </strong> {pokemonSpeed[5]} </p>
             </div>
           </div>
         </div>
