@@ -12,8 +12,9 @@ const Cartao = ({ ...props }) => {
   const [pokemonSpeed, setPokemonSpeed] = useState([]);
 
   useEffect(() => {
-    let url = `https://pokeapi.co/api/v2/pokemon/${props.name}`;
+    let url = `https://pokeapi.co/api/v2/pokemon/${props.name.toLowerCase()}`;
     fetch(url)
+    
       .then((response) => response.json())
       .then((res) => {
         setPokemon(res);

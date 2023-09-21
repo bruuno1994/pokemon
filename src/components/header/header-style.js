@@ -8,6 +8,7 @@ export const ContainerHeader = styled.header`
     height: 60px;
     width: 100%;
     background-color: yellow;
-    color: red;
+    color: orange;
     box-shadow: 5px 5px 6px orange;
+    font-weight: bold;
 `

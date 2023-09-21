@@ -32,8 +32,13 @@ function Form({ pokemonCount, setPokemonCount, setPokemonName }) {
     <ContainerForm>
 
     <br />
-    <h3>Olá, bem vindo ao seu guia de Pokemóns definitivo.</h3>
+    <h3>Olá, seja bem vindo ao seu guia de Pokemóns definitivo.</h3>
     <h4>Para começar, escolha uma das opções abaixo:</h4>
+
+    <ul>
+      <li>Pesquise o seu pokemón favorito, através do nome.</li>
+      <li>Determine uma quantidade de pokemóns para ser exibida na tels</li>
+    </ul>
 
       <ContainerSearch>
       <br />
@@ -46,6 +51,7 @@ function Form({ pokemonCount, setPokemonCount, setPokemonName }) {
       />
       </ContainerSearch>
       <ContainerSearch>
+        <br />
         <Input
           type="text"
           id="searchInput"
