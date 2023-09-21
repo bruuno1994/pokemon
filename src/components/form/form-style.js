@@ -24,7 +24,7 @@ export const Input = styled.input`
 `
 
 export const Button = styled.button`
-    color: red;
+    color: orange;
     background-color: yellow;
     border-color: orange;
     box-shadow: 3px 3px 5px orange;
@@ -35,7 +35,7 @@ export const Button = styled.button`
 
     &:hover {
     color: yellow;
-    background-color: red;
+    background-color: orange;
     border-color: orange;
     box-shadow: 3px 3px 5px orange;
     cursor: pointer;
