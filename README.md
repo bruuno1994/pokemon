@@ -1,18 +1,18 @@
 # Tecnologias utilizadas no desenvolvimento da aplicação:
 
-- React
+- React:
 Framework bastante famoso para Front-End
 
-- Node.js
+- Node.js:
 Linguagem de programação responsável por organizar toda a lógica da aplicação
 
-- Styled Components
+- Styled Components:
 Estilização de boa parte da aplicação, por meio de constantes feitas em Javascript
 
-- Bootstrap
+- Bootstrap:
 Framework bem famoso para CSS
 
-- Reactstrap
+- Reactstrap:
 Biblioteca do Boostrap para o React
 
 
