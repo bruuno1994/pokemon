@@ -49,7 +49,7 @@ const Cartao = ({ ...props }) => {
         );
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [props.name]);
 
   const getTypeColorClass = () => {
     const type1 = pokemonType[0];
